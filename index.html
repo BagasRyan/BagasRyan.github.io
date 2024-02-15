@@ -17,6 +17,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+        #porto1, #porto2, #porto3, #gambar, #nama, #divider, #profesi, #bootstrap, #laravel, #js, #sql, #fb, #ig, #wa, #github, #divPorto, #divTentang, #teksTentang {
+            transition: 400ms;
+            transform: scale(0);
+        }
+    </style>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -36,29 +42,29 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-secondary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5 rounded-circle" src="assets/img/bagas.jpg" alt="..." />
+                <img class="masthead-avatar mb-5 rounded-circle" id="gambar" src="assets/img/bagas.jpg" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">BAGAS RYAN ALWIANSYAH</h1>
+                <h1 class="masthead-heading text-uppercase mb-0" id="nama">BAGAS RYAN ALWIANSYAH</h1>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-light" id="divider">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-user"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Web Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0" id="profesi">Web Developer</p>
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="teksPorto">Portfolio</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom" id="divPorto">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -66,28 +72,28 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" id="porto1">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/project/galeri.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" id="porto2">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/project/pengaduanGuru.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" id="porto3">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-info fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/project/rentalMobil.jpg" alt="..." />
                         </div>
@@ -96,12 +102,12 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-secondary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">Tentang Saya</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-light" id="divTentang">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-book"></i></div>
                     <div class="divider-custom-line"></div>
@@ -109,27 +115,29 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col">
-                        <p class="lead mb-5">
+                        <p class="lead mb-5" id="teksTentang">
                             Seorang yang berminat di bidang Teknik Informatika dengan latar pendidikan Rekayasa Perangkat Lunak
                             , memiliki pengetahuan yang kuat di bidang Software dan Hardware
                         </p>
                     </div>
                 </div>
                 <br>
+                <h4>Kemampuan Saya</h4>
+                <hr>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="bootstrap">
                         <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-bootstrap"></i></i></button>
                         <h4><strong>Bootstrap 5</strong></h4>
                         <p class="text-faded mb-0">Bootstrap adalah framework CSS yang sangat populer!</p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="laravel">
                         <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-laravel"></i></i></button>
                         <h4><strong>Laravel</strong></h4>
                         <p class="text-faded mb-0">Framework PHP yang kaya akan fitur agar websitemu semakin menarik! </p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0" id="js">
                         <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-javascript"></i></i></button>
                         <h4><strong>JavaScript</strong></h4>
                         <p class="text-faded mb-0">
@@ -137,7 +145,7 @@
                         </p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" id="sql">
                         <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-mysql"></i></i></button>
                         <h4><strong>MySQL</strong></h4>
                         <p class="text-faded mb-0">MySQL adalah DBMS yang terpopuler dan sudah banyak digunakan oleh beberapa developer!</p>
@@ -145,28 +153,28 @@
                     </div>
             </div>
         </section>
-        <footer class="footer text-center" id="contact">
+        <footer class="footer text-center bg-white" id="contact">
             <div class="container">
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-dark">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-phone"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <div class="row">
                     <!-- Footer Social Icons-->
-                    <div class="col">
+                    <div class="col text-dark">
                         <h4 class="text-uppercase mb-4">Media Sosial Saya</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://web.facebook.com/bagas.ryan.96343/"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/bagasryannn/?next=%2F"><i class="fab fa-fw fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/6289525903921"><i class="fab fa-fw fa-whatsapp"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/BagasRyan"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 text-dark border" id="fb" href="https://web.facebook.com/bagas.ryan.96343/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 text-dark border" id="ig" href="https://www.instagram.com/bagasryannn/?next=%2F"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 text-dark border" id="wa" href="https://wa.me/6289525903921"><i class="fab fa-fw fa-whatsapp"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 text-dark border" id="github" href="https://github.com/BagasRyan"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container">Bagas Ryan Alwiansyah 2024</small></div>
+            <div class="container">2024 &copy;Copyright</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -190,9 +198,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/project/galeri.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Aplikasi galeri sederhana untuk menyimpan sebuah gambar</p>
+                                    <p>Dibuat menggunakan Bootstrap, Laravel, & JavaScript</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Tutup
                                     </button>
                                     <a href="https://github.com/BagasRyan/Galeri/tree/master" class="btn btn-secondary"><i class="fab fa-fw fa-github"></i> Lihat di GitHub</a>
                                 </div>
@@ -223,9 +232,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/project/pengaduanGuru.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Sebuah aplikasi web untuk melaporkan setiap masalah yang ada di Sekolah</p>
+                                    <p>Dibuat menggunakan Bootstrap, Laravel, & JavaScript</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Tutup
                                     </button>
                                     <a href="https://github.com/BagasRyan/PengaduanGuru" class="btn btn-secondary"><i class="fab fa-fw fa-github"></i> Lihat di GitHub</a>
                                 </div>
@@ -258,9 +268,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/project/rentalMobil.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Sebuah aplikasi media sosial sederhana untuk keperluan sewa kendaraan roda empat</p>
+                                    <p>Dibuat menggunakan Bootstrap, Laravel, & JavaScript</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Tutup
                                     </button>
                                     <a href="https://github.com/BagasRyan/RentalMobil/tree/master" class="btn btn-secondary"><i class="fab fa-fw fa-github"></i> Lihat di GitHub</a>
                                 </div>
@@ -280,5 +291,129 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+
+            const porto1 = document.getElementById('porto1');
+            const porto2 = document.getElementById('porto2');
+            const porto3 = document.getElementById('porto3');
+            const gambar = document.getElementById('gambar');
+            const nama = document.getElementById('nama');
+            const divider = document.getElementById('divider');
+            const profesi = document.getElementById('profesi');
+            const boot = document.getElementById('bootstrap');
+            const laravel = document.getElementById('laravel');
+            const js = document.getElementById('js');
+            const sql = document.getElementById('sql');
+            const fb = document.getElementById('fb');
+            const ig = document.getElementById('ig');
+            const wa = document.getElementById('wa');
+            const github = document.getElementById('github');
+            const divPorto = document.getElementById('divPorto');
+            const divTentang = document.getElementById('divTentang');
+            const teksTentang = document.getElementById('teksTentang');
+
+            //tampilan mobile
+            if(window.innerWidth < 1000){
+                // alert('tampilan mobile');
+            window.addEventListener('scroll', function(){
+            const scroll = window.scrollY;
+            console.log(scroll);
+            if(scroll > 614){
+                porto1.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 500){
+                divPorto.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 800){
+                porto2.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 1000){
+                porto3.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 1800){
+                divTentang.style.transform = 'scale(1)';
+                teksTentang.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 2000){
+                setInterval(function(){boot.style.transform = 'scale(1)';}, 300);
+                setInterval(function(){laravel.style.transform = 'scale(1)';}, 400);
+                setInterval(function(){js.style.transform = 'scale(1)';}, 500);
+                setInterval(function(){sql.style.transform = 'scale(1)';}, 600);
+            }
+
+            if(scroll > 2900){
+                setInterval(function(){
+                    fb.style.transform = 'scale(1)';
+                    github.style.transform = 'scale(1)';
+                }, 300);
+                setInterval(function(){
+                    ig.style.transform = 'scale(1)';
+                    wa.style.transform = 'scale(1)';
+                }, 500);
+            }
+
+            });
+        }
+
+        //tampilan desktop
+        if(window.innerWidth > 1000){
+            // alert('tampilan desktop');
+            window.addEventListener('scroll', function(){
+            const scroll = window.scrollY;
+            console.log(scroll);
+            
+            if(scroll > 500){
+                divPorto.style.transform = 'scale(1)';
+            }
+            
+            if(scroll > 700){
+                porto1.style.transform = 'scale(1)';
+                porto2.style.transform = 'scale(1)';
+                porto3.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 1300){
+                divTentang.style.transform = 'scale(1)';
+                teksTentang.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 1500){
+                setInterval(function(){boot.style.transform = 'scale(1)';}, 300);
+                setInterval(function(){laravel.style.transform = 'scale(1)';}, 400);
+                setInterval(function(){js.style.transform = 'scale(1)';}, 500);
+                setInterval(function(){sql.style.transform = 'scale(1)';}, 600);
+            }
+
+            if(scroll > 1800){
+                setInterval(function(){
+                    fb.style.transform = 'scale(1)';
+                    github.style.transform = 'scale(1)';
+                }, 300);
+                setInterval(function(){
+                    ig.style.transform = 'scale(1)';
+                    wa.style.transform = 'scale(1)';
+                }, 500);
+            }
+
+            });
+        }
+
+            setInterval(function(){
+                gambar.style.transform = 'scale(1)';
+            }, 400);
+
+            setInterval(function(){
+                nama.style.transform = 'scale(1)';
+                divider.style.transform = 'scale(1)';
+                profesi.style.transform = 'scale(1)';
+            }, 500);
+
+            
+        </script>
     </body>
 </html>
