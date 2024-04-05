@@ -18,7 +18,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <style>
-        #porto1, #porto2, #porto3, #gambar, #nama, #divider, #profesi, #bootstrap, #laravel, #js, #sql, #fb, #ig, #wa, #github, #divPorto, #divTentang, #teksTentang {
+        #porto1, #porto2, #porto3, #gambar, #nama, #divider, #profesi, #bootstrap, #laravel, #js, #sql, #fb, #ig, #wa, #github, #divPorto, #divTentang, #teksTentang, #pengalaman {
             transition: 400ms;
             transform: scale(0);
         }
@@ -34,8 +34,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -55,16 +55,87 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0" id="profesi">Web Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0" id="profesi">Halo, Saya adalah seorang Junior Web Developer</p>
             </div>
         </header>
+        <!-- About Section-->
+        <section class="page-section text-dark mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-dark">Tentang Saya</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-dark" id="divTentang">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-book"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col">
+                        <p class="lead mb-5" id="teksTentang">
+                            Seorang yang berminat di bidang Teknik Informatika dengan latar pendidikan Rekayasa Perangkat Lunak
+                            , memiliki pengetahuan yang kuat di bidang Software dan Hardware
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <h4>Kemampuan Saya</h4>
+                <hr>
+                <div class="row text-center p-5">
+                    <div class="col-3" id="bootstrap">
+                        <button class="btn btn-outline-dark btn-social mx-1"><i class="lni lni-bootstrap"></i></i></button>
+                        <h6><strong>Bootstrap 5</strong></h6>
+                    </div>
+                    
+                    <div class="col-3" id="laravel">
+                        <button class="btn btn-outline-dark btn-social mx-1"><i class="lni lni-laravel"></i></i></button>
+                        <h6><strong>Laravel</strong></h6>
+                    </div>
+                    
+                    <div class="col-3" id="js">
+                        <button class="btn btn-outline-dark btn-social mx-1"><i class="lni lni-javascript"></i></i></button>
+                        <h6><strong>JavaScript</strong></h6>
+                    </div>
+                    
+                    <div class="col-3" id="sql">
+                        <button class="btn btn-outline-dark btn-social mx-1"><i class="lni lni-mysql"></i></i></button>
+                        <h6><strong>MySQL</strong></h6>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+                <h4>Pengalaman Magang</h4>
+                <div class="container p-5">
+                    <div class="card p-3" id="pengalaman">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/img/percik.jpg" width="235" alt="Percik">
+                            </div>
+
+                            <div class="col-8 text-dark">
+                                <h3>PT. Percikan Iman Tours & Travel</h3>
+                                <h5>Back End Developer</h5>
+                                <hr>
+                                <h6>Mei 2023 - Oktober 2023</h6>
+                                <h4>Jobdesk: </h4>
+                                <h5>- Mengembangkan fitur pada web perusahaan</h5>
+                                <h5>- Mengelola database perusahaan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio bg-secondary" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="teksPorto">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0" id="teksPorto">Portfolio</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom" id="divPorto">
+                <div class="divider-custom divider-light" id="divPorto">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -101,58 +172,7 @@
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-secondary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Tentang Saya</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light" id="divTentang">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-book"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col">
-                        <p class="lead mb-5" id="teksTentang">
-                            Seorang yang berminat di bidang Teknik Informatika dengan latar pendidikan Rekayasa Perangkat Lunak
-                            , memiliki pengetahuan yang kuat di bidang Software dan Hardware
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <h4>Kemampuan Saya</h4>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="bootstrap">
-                        <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-bootstrap"></i></i></button>
-                        <h4><strong>Bootstrap 5</strong></h4>
-                        <p class="text-faded mb-0">Bootstrap adalah framework CSS yang sangat populer!</p>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="laravel">
-                        <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-laravel"></i></i></button>
-                        <h4><strong>Laravel</strong></h4>
-                        <p class="text-faded mb-0">Framework PHP yang kaya akan fitur agar websitemu semakin menarik! </p>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0" id="js">
-                        <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-javascript"></i></i></button>
-                        <h4><strong>JavaScript</strong></h4>
-                        <p class="text-faded mb-0">
-                            Bahasa Script yang akan membuat websitemu menjadi lebih menarik!
-                        </p>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6" id="sql">
-                        <button class="btn btn-outline-light btn-social mx-1"><i class="lni lni-mysql"></i></i></button>
-                        <h4><strong>MySQL</strong></h4>
-                        <p class="text-faded mb-0">MySQL adalah DBMS yang terpopuler dan sudah banyak digunakan oleh beberapa developer!</p>
-                    </div>
-                    </div>
-            </div>
-        </section>
+        <!-- end portofolio section -->
         <footer class="footer text-center bg-white" id="contact">
             <div class="container">
                 <div class="divider-custom divider-dark">
@@ -330,32 +350,36 @@
             window.addEventListener('scroll', function(){
             const scroll = window.scrollY;
             console.log(scroll);
-            if(scroll > 614){
+            if(scroll > 2100){
                 porto1.style.transform = 'scale(1)';
             }
 
-            if(scroll > 500){
+            if(scroll > 1900){
                 divPorto.style.transform = 'scale(1)';
             }
 
-            if(scroll > 800){
+            if(scroll > 2300){
                 porto2.style.transform = 'scale(1)';
             }
 
-            if(scroll > 1000){
+            if(scroll > 2600){
                 porto3.style.transform = 'scale(1)';
             }
 
-            if(scroll > 1800){
+            if(scroll > 650){
                 divTentang.style.transform = 'scale(1)';
                 teksTentang.style.transform = 'scale(1)';
             }
 
-            if(scroll > 2000){
+            if(scroll > 850){
                 setInterval(function(){boot.style.transform = 'scale(1)';}, 300);
                 setInterval(function(){laravel.style.transform = 'scale(1)';}, 400);
                 setInterval(function(){js.style.transform = 'scale(1)';}, 500);
                 setInterval(function(){sql.style.transform = 'scale(1)';}, 600);
+            }
+
+            if(scroll > 1200){
+                document.getElementById('pengalaman').style.transform = 'scale(1)';
             }
 
             if(scroll > 2900){
@@ -384,24 +408,28 @@
             }
             
             if(scroll > 700){
-                porto1.style.transform = 'scale(1)';
-                porto2.style.transform = 'scale(1)';
-                porto3.style.transform = 'scale(1)';
-            }
-
-            if(scroll > 1300){
                 divTentang.style.transform = 'scale(1)';
                 teksTentang.style.transform = 'scale(1)';
             }
-
-            if(scroll > 1500){
+            
+            if(scroll > 850){
                 setInterval(function(){boot.style.transform = 'scale(1)';}, 300);
                 setInterval(function(){laravel.style.transform = 'scale(1)';}, 400);
                 setInterval(function(){js.style.transform = 'scale(1)';}, 500);
                 setInterval(function(){sql.style.transform = 'scale(1)';}, 600);
             }
 
-            if(scroll > 1800){
+            if(scroll > 1100){
+                document.getElementById('pengalaman').style.transform = 'scale(1)';
+            }
+
+            if(scroll > 1700){
+                porto1.style.transform = 'scale(1)';
+                porto2.style.transform = 'scale(1)';
+                porto3.style.transform = 'scale(1)';
+            }
+
+            if(scroll > 2200){
                 setInterval(function(){
                     fb.style.transform = 'scale(1)';
                     github.style.transform = 'scale(1)';
