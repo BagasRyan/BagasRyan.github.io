@@ -11044,3 +11044,14 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* CUSTOM CSS */
+#tentangSaya:hover, #strongnet:hover, #percik:hover {
+  transform: scale(1.1);
+}
+
+#tentangSaya, #percik, #strongnet {
+  transition: 500ms;
+}
+
+
